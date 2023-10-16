@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- For Search Priority -->
+    <meta
+      name="description"
+      content="Handcrafted, quality guitars made in the small town of West Lorne, Ontario. Contact us today to make your dream instrument a musical reality."
+    />
+    <meta
+      name="keywords"
+      content="guitar building, guitar side bending, Telecaster, Stratocaster, Broadcaster, tdpri, acoustic electric guitar,acoustic electric guitars,acoustic guitar,acoustic guitar building,acoustic guitar making,acoustic guitar neck,acoustic guitar wood,acoustic guitars,acoustical guitar,beginner electric guitar,cheap electric guitar,custom electric guitar,custom guitar,electric guitar,electric guitar info,electric guitar kits,electric guitar sales,electric guitar tuners,electric guitars,fender acoustic guitar,fender acoustic guitars,fender electric guitar,fender electric guitars,guitar,guitar neck,guitar parts,guitar ,supplies,guitars,guitars acoustic guitar,martin acoustic guitar,martin guitars,new acoustic guitar"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/script-mt" rel="stylesheet" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <!-- JS -->
+    <script src="../JS/header.js"></script>
+    <!-- Title -->
+    <title>Order Your Guitar</title>
+  </head>
+  <body onresize="resize()">
+    <!-- Header -->
+    <header id="header">
+      <div class="content">
+        <nav class="header-nav">
+          <div class="header-images">
+            <a href="../">
+              <img
+                class="header-logo"
+                src="../imgs/logo-white-main.svg"
+                alt="Clarks Guitars Logo"
+            /></a>
+            <button>
+              <img
+                src="../imgs/icons/hamburger.svg"
+                class="hamburger"
+                id="hamburger"
+                onclick="navOpen()"
+              />
+            </button>
+          </div>
+          <div class="header-drop-nav">
+            <a class="header-nav-item" href="../FAQ/">FAQs</a>
+            <a class="header-nav-item" href="../Contact/">Contact Us</a>
+            <a class="header-nav-item" href="./">Order Your Guitar</a>
+          </div>
+        </nav>
+        <h1>Order Your Guitar</h1>
+      </div>
+    </header>
+    <!-- Main -->
+    <main>
+      <section class="form-section">
+        <div class="content">
+          <h2>Order Your Personal Guitar</h2>
+          <p>
+            Fill out the form below and we will get back to you to discuss your
+            design and give you your quote.
+          </p>
+          <form>
+            <div class="main-form">
+              <div class="field-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                  required
+                />
+                <br />
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+                <br />
+                <label for="phone">Email</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  minlength="12"
+                  maxlength="12"
+                  placeholder="### ###-####"
+                  pattern="^\d{3}\s\d{3}-\d{4}"
+                  required
+                />
+              </div>
+              <div class="field-group">
+                <label for="guitar-description">Guitar Description</label
+                ><textarea
+                  name="guitar-description"
+                  id="guitar-description"
+                  placeholder="Please enter the description of your wanted guitar here."
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <button type="submit">Order</button>
+          </form>
+        </div>
+        <section class="image-scroll">
+          <div class="scroll-group">
+            <img class="scroll" src="../imgs/guitar-1.jpg" />
+            <img class="scroll" src="../imgs/guitar-2.jpg" />
+            <img class="scroll" src="../imgs/guitar-3.jpg" />
+            <img class="scroll" src="../imgs/guitar-4.jpg" />
+            <img class="scroll" src="../imgs/guitar-5.jpg" />
+            <img class="scroll" src="../imgs/guitar-6.jpg" />
+            <img class="scroll" src="../imgs/guitar-7.jpg" />
+            <img class="scroll" src="../imgs/guitar-8.jpg" />
+            <img class="scroll" src="../imgs/guitar-9.jpg" />
+            <img class="scroll" src="../imgs/guitar-1.jpg" />
+            <img class="scroll" src="../imgs/guitar-2.jpg" />
+            <img class="scroll" src="../imgs/guitar-3.jpg" />
+            <img class="scroll" src="../imgs/guitar-4.jpg" />
+            <img class="scroll" src="../imgs/guitar-5.jpg" />
+            <img class="scroll" src="../imgs/guitar-6.jpg" />
+            <img class="scroll" src="../imgs/guitar-7.jpg" />
+            <img class="scroll" src="../imgs/guitar-8.jpg" />
+            <img class="scroll" src="../imgs/guitar-9.jpg" />
+          </div>
+        </section>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="content">
+        <div class="logo-copyright">
+          <a href="../"
+            ><img
+              class="footer-logo"
+              src="../imgs/logo-black.svg"
+              alt="Clarks Guitars Logo"
+          /></a>
+          <div class="footer-copyright-box">
+            <p class="footer-copyright-text">
+              Copyright &copy; 2023 Clarks Guitars.
+            </p>
+            <p class="footer-copyright-text">Website designed by Adam Byers.</p>
+          </div>
+        </div>
+        <div class="footer-nav-social">
+          <nav class="footer-nav">
+            <a class="footer-nav-item" href="../FAQ/">FAQs</a>
+            <a class="footer-nav-item" href="../Contact/">Contact Us</a>
+            <a class="footer-nav-item" href="./">Order</a>
+          </nav>
+          <hr />
+          <div class="footer-social">
+            <a
+              class="social-link"
+              href="https://www.facebook.com/clarksguitars"
+              target="_blank"
+            >
+              <img
+                class="social-icon"
+                src="../imgs/facebook.svg"
+                alt="Facebook Icon"
+              />
+            </a>
+            <a
+              class="footer-nav-item"
+              href="https://www.flaticon.com/free-icons/pin"
+              title="pin icons"
+              target="_blank"
+              >Icons created by Freepik - Flaticon</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,731 @@
+:root {
+  --white: #ffffff;
+  --off-white: #e0e0e0;
+  --light-grey: #a0a0a0;
+  --clarks-yellow: #eeab4d;
+  --clarks-orange: #cf6330;
+  --dark-grey: #001011;
+  --grey: #181b1b;
+  --black: #000000;
+}
+body {
+  margin: 110px 0 0 0;
+  font-family: "Figtree", sans-serif;
+  background-color: var(--grey);
+}
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+/*
+--------------------
+      Homepage
+--------------------
+*/
+/* Custom Built Section */
+.custom-built {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../imgs/bg-1.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+.custom-built h2 {
+  font-weight: 700;
+  padding: 175px 0 0 0;
+  font-size: 4em;
+  color: var(--white);
+  margin: 0px;
+  width: 700px;
+}
+.custom-built p {
+  color: var(--off-white);
+  width: 750px;
+  margin: 0;
+  font-size: 1.1em;
+}
+/* Meet Austin Section */
+.meet-austin {
+  height: 500px;
+  margin: 30px 0;
+}
+.meet-austin .content {
+  display: flex;
+}
+.meet-austin-content {
+  width: 50%;
+  overflow: visible;
+  z-index: 1;
+}
+.meet-austin .text-box {
+  margin: 50px;
+  padding: 40px;
+  width: 900px;
+  background-color: var(--off-white);
+}
+.meet-austin h2 {
+  font-weight: 700;
+  font-size: 4em;
+  color: var(--clarks-yellow);
+  margin: 0px;
+  text-align: right;
+}
+.meet-austin p {
+  color: var(--dark-grey);
+  margin: 0;
+  font-size: 1.75em;
+  text-align: right;
+}
+.picture-of-austin {
+  height: 500px;
+  width: 50%;
+  text-align: right;
+}
+.picture-of-austin img {
+  width: 425px;
+}
+/* Why we make guitars */
+.why-make-guitars {
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../imgs/bg-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 25px;
+}
+.why-make-guitars h2 {
+  font-weight: 700;
+  font-size: 4em;
+  color: var(--clarks-yellow);
+}
+.why-make-guitars p {
+  color: var(--white);
+  font-size: 1.5em;
+}
+/* Image Scroll */
+.image-scroll {
+  height: 300px;
+  margin: 20px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.scroll-group {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+}
+.image-scroll .scroll {
+  height: 300px;
+  margin: 0;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+/*
+----------------------
+      Order Page
+----------------------
+*/
+/* Form Section */
+.form-section {
+  padding: 10px 0;
+  text-align: center;
+}
+.form-section h2 {
+  font-weight: 700;
+  font-size: 4em;
+  color: var(--clarks-yellow);
+}
+.form-section p {
+  color: var(--white);
+  font-size: 1.5em;
+}
+.form-section form {
+  text-align: center;
+}
+.form-section .main-form {
+  width: 100%;
+  display: flex;
+}
+.form-section .field-group {
+  flex: 1;
+}
+.form-section .field-group:first-child {
+  text-align: right;
+  padding-right: 50px;
+}
+.form-section .field-group:last-child {
+  text-align: left;
+  padding-left: 50px;
+}
+.form-section label {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.form-section input {
+  width: 400px;
+  text-align: center;
+  background: none;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  border-bottom: 3px solid var(--clarks-yellow);
+  color: var(--white);
+}
+.form-section ::placeholder {
+  color: var(--light-grey);
+  opacity: 1;
+}
+.form-section input:focus {
+  outline: none;
+  border-bottom-color: var(--clarks-orange);
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--white);
+}
+.form-section textarea {
+  width: 400px;
+  border: 3px solid var(--clarks-yellow);
+  background-color: var(--black);
+  color: var(--white);
+  resize: none;
+  font-stretch: normal;
+  font-size: 1.1em;
+  font-family: "Figtree", sans-serif;
+  height: calc(100% - 10px);
+  display: inline;
+}
+.form-section textarea:focus {
+  outline: none;
+  border-color: var(--clarks-orange);
+}
+.form-section button {
+  margin: 30px;
+  outline: none;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 1em;
+  background-color: var(--clarks-yellow);
+  font-family: "Script MT Bold", sans-serif;
+  font-size: 3em;
+  cursor: pointer;
+}
+.form-section button:hover,
+.form-section button:focus {
+  background-color: var(--clarks-orange);
+}
+/*
+----------------------
+      FAQ Page
+----------------------
+*/
+.faq-section {
+  padding: 1px 0;
+}
+.faq-section h2 {
+  color: var(--clarks-yellow);
+  font-size: 3em;
+}
+.faq-section button {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--clarks-yellow);
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+.faq-section h3 {
+  color: var(--white);
+  font-size: 1.5em;
+  margin: 15px 1px 1px 0;
+  display: inline-block;
+  width: 90%;
+}
+.faq-section p {
+  color: var(--white);
+}
+.faq-section .collapsible {
+  border-bottom: 3px solid var(--clarks-yellow);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.faq-section .collapsible-button:after {
+  content: "+";
+  font-size: 1.5em;
+  margin: 15px 0 0 5px;
+  color: white;
+  float: right;
+  text-align: center;
+  width: 20px;
+}
+.faq-section .active:after {
+  content: "-";
+}
+.talk-map {
+  flex: 2;
+  display: flex;
+}
+/*
+---------------------------
+      Contact Us Page
+---------------------------
+*/
+.contact-us-section h2 {
+  color: var(--clarks-yellow);
+  font-size: 3em;
+  padding: 25px 0;
+  margin: 0;
+}
+.contact-us-section .sections {
+  display: flex;
+}
+.contact-us-section .section {
+  flex: 1;
+  text-align: center;
+}
+.contact-us-section .map {
+  width: 100%;
+  height: 600px;
+}
+.contact-us-section h3 {
+  color: var(--clarks-yellow);
+  font-size: 3em;
+  margin: 0;
+  font-family: "Script MT Bold", sans-serif;
+}
+.contact-us-section .section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact-us-section .talk-to-us h3 {
+  padding: 0;
+}
+.contact-us-section .talk-to-us a {
+  padding: 15px;
+}
+.contact-us-section .icons {
+  height: 1em;
+  filter: invert();
+}
+.contact-us-section a {
+  font-size: 1.5em;
+  color: var(--white);
+  text-decoration: none;
+}
+.contact-us-section a:hover .icons {
+  filter: invert(47%) sepia(29%) saturate(1351%) hue-rotate(335deg)
+    brightness(91%) contrast(87%);
+}
+.contact-us-section a:hover {
+  color: var(--clarks-orange);
+}
+.contact-us-section label {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.contact-us-section input {
+  width: 400px;
+  text-align: center;
+  background: none;
+  border: none;
+  margin: 10px;
+  font-size: 1.1em;
+  border-bottom: 3px solid var(--clarks-yellow);
+  color: var(--white);
+}
+.contact-us-section ::placeholder {
+  color: var(--light-grey);
+  opacity: 1;
+}
+.contact-us-section input:focus {
+  outline: none;
+  border-bottom-color: var(--clarks-orange);
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--white);
+}
+.contact-us-section textarea {
+  width: 400px;
+  border: 3px solid var(--clarks-yellow);
+  background-color: var(--black);
+  color: var(--white);
+  resize: none;
+  font-stretch: normal;
+  font-size: 1.1em;
+  margin-top: 10px;
+  font-family: "Figtree", sans-serif;
+  height: 300px;
+  display: inline;
+}
+.contact-us-section textarea:focus {
+  outline: none;
+  border-color: var(--clarks-orange);
+}
+.contact-us-section button {
+  margin: 30px;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 1em;
+  background-color: var(--clarks-yellow);
+  font-family: "Script MT Bold", sans-serif;
+  font-size: 3em;
+  cursor: pointer;
+}
+.contact-us-section button:hover,
+.contact-us-section button:focus {
+  background-color: var(--clarks-orange);
+}
+@media only screen and (max-width: 1370px) {
+  /*
+  --------------------
+        Homepage
+  --------------------
+  */
+  /* Custom Built Section */
+  /* Meet Austin Section */
+  .meet-austin .text-box {
+    width: calc(90vw - 425px);
+  }
+  .meet-austin .text-box p {
+    font-size: 1.5em;
+  }
+  /* Why we make guitars */
+  /* Image Scroll */
+  /*
+  ----------------------
+        Order Page
+  ----------------------
+  */
+  /* Form Section */
+  /*
+  ----------------------
+        FAQ Page
+  ----------------------
+  */
+  /*
+  ---------------------------
+        Contact Us Page
+  ---------------------------
+  */
+}
+@media only screen and (max-width: 1180px) {
+  /*
+  --------------------
+        Homepage
+  --------------------
+  */
+  /* Custom Built Section */
+  /* Meet Austin Section */
+  .meet-austin .text-box p {
+    font-size: 1.25em;
+  }
+  /* Why we make guitars */
+  /* Image Scroll */
+  /*
+  ----------------------
+        Order Page
+  ----------------------
+  */
+  /* Form Section */
+  /*
+  ----------------------
+        FAQ Page
+  ----------------------
+  */
+  /*
+  ---------------------------
+        Contact Us Page
+  ---------------------------
+  */
+  .contact-us-section .talk-map {
+    flex-direction: column-reverse;
+  }
+  .contact-us-section .map {
+    height: 350px;
+  }
+  .contact-us-section .section:first-child {
+    flex: 3;
+    display: block;
+  }
+  .contact-us-section .talk-to-us {
+    flex: 1;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  /*
+  --------------------
+        Homepage
+  --------------------
+  */
+  /* Custom Built Section */
+  /* Meet Austin Section */
+  .meet-austin .picture-of-austin img {
+    width: 300px;
+  }
+  .meet-austin .text-box {
+    width: calc(90vw - 300px);
+  }
+  /* Why we make guitars */
+  /* Image Scroll */
+  /*
+  ----------------------
+        Order Page
+  ----------------------
+  */
+  /* Form Section */
+  .form-section h2 {
+    font-size: 3em;
+  }
+  .form-section .field-group:first-child {
+    padding-right: 10px;
+  }
+  .form-section .field-group:last-child {
+    padding-left: 10px;
+  }
+  .form-section input,
+  .form-section textarea {
+    width: 90%;
+  }
+  /*
+  ----------------------
+        FAQ Page
+  ----------------------
+  */
+  /*
+  ---------------------------
+        Contact Us Page
+  ---------------------------
+  */
+  .contact-us-section .sections {
+    flex-direction: column-reverse;
+  }
+  .contact-us-section input {
+    width: 40%;
+  }
+  .contact-us-section textarea {
+    display: block;
+    margin: 10px auto 0;
+    width: 90%;
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /*
+  --------------------
+        Homepage
+  --------------------
+  */
+  /* Custom Built Section */
+  .custom-built h2 {
+    width: 470px;
+    font-size: 3em;
+  }
+  .custom-built p {
+    width: 100%;
+  }
+  /* Meet Austin Section */
+  .meet-austin {
+    height: auto;
+    overflow: hidden;
+  }
+  .meet-austin .content {
+    flex-direction: column-reverse;
+  }
+  .meet-austin .picture-of-austin {
+    width: 100%;
+    height: 250px;
+  }
+  .meet-austin .picture-of-austin img {
+    width: 75%;
+  }
+  .meet-austin .meet-austin-content {
+    width: 100%;
+  }
+  .meet-austin .text-box {
+    width: 75%;
+    margin: 10px;
+  }
+  .meet-austin .text-box p {
+    font-size: 1.25em;
+  }
+  /* Why we make guitars */
+  .why-make-guitars {
+    z-index: 2;
+    height: auto;
+    padding-top: 5px;
+  }
+  .why-make-guitars h2 {
+    font-size: 3em;
+    margin: 20px 0;
+  }
+  .why-make-guitars p {
+    font-size: 1.2em;
+    padding-bottom: 20px;
+  }
+  /* Image Scroll */
+  /*
+  ----------------------
+        Order Page
+  ----------------------
+  */
+  /* Form Section */
+  .form-section h2 {
+    font-size: 2.5em;
+  }
+  .form-section p {
+    font-size: 1.25em;
+  }
+  .form-section button {
+    font-size: 2em;
+  }
+  /*
+  ----------------------
+        FAQ Page
+  ----------------------
+  */
+  /*
+  ---------------------------
+        Contact Us Page
+  ---------------------------
+  */
+}
+@media only screen and (max-width: 550px) {
+  /*
+  --------------------
+        Homepage
+  --------------------
+  */
+  /* Custom Built Section */
+  .custom-built h2 {
+    width: 380px;
+    font-size: 2.4em;
+  }
+  /* Meet Austin Section */
+  .meet-austin .picture-of-austin {
+    width: 100%;
+    height: 175px;
+  }
+  .meet-austin .text-box h2 {
+    font-size: 2.5em;
+  }
+  .meet-austin .text-box p {
+    font-size: 1.1em;
+  }
+  /* Why we make guitars */
+  .why-make-guitars h2 {
+    font-size: 2.4em;
+  }
+  .why-make-guitars p {
+    font-size: 1.1em;
+  }
+  /* Image Scroll */
+  /*
+  ----------------------
+        Order Page
+  ----------------------
+  */
+  /* Form Section */
+  .form-section h2 {
+    font-size: 1.9em;
+  }
+  .form-section p {
+    font-size: 1;
+  }
+  .form-section .main-form {
+    flex-direction: column;
+  }
+  .form-section .field-group:first-child,
+  .form-section .field-group:last-child {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .form-section textarea {
+    height: 150px;
+  }
+  /*
+  ----------------------
+        FAQ Page
+  ----------------------
+  */
+  /*
+  ---------------------------
+        Contact Us Page
+  ---------------------------
+  */
+}
+@media only screen and (max-width: 400px) {
+  /*
+  --------------------
+        Homepage
+  --------------------
+  */
+  /* Custom Built Section */
+  .custom-built h2 {
+    width: 280px;
+    font-size: 1.9em;
+  }
+  .custom-built p {
+    font-size: 1em;
+  }
+  /* Meet Austin Section */
+  .meet-austin .text-box {
+    width: 90%;
+    margin: 0;
+    padding: 5% 2.5%;
+  }
+  .meet-austin .text-box p {
+    font-size: 1em;
+  }
+  .meet-austin .picture-of-austin img {
+    width: 95%;
+  }
+  /* Why we make guitars */
+  /* Image Scroll */
+  /*
+  ----------------------
+        Order Page
+  ----------------------
+  */
+  /* Form Section */
+  /*
+  ----------------------
+        FAQ Page
+  ----------------------
+  */
+  /*
+  ---------------------------
+        Contact Us Page
+  ---------------------------
+  */
+  .contact-us-section h3 {
+    font-size: 2em;
+  }
+  .contact-us-section button {
+    font-size: 1.75em;
+  }
+  .contact-us-section .talk-to-us a {
+    font-size: 1em;
+  }
+}
